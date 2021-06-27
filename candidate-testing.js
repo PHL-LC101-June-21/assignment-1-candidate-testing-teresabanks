@@ -43,7 +43,7 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
- let gradeQuiz = `Candidate Name: ${candidateName}
+ let checkQuiz = `Candidate Name: ${candidateName}
  1). ${questions[0]}
     Your Answer: ${candidateAnswers[0]}
     Correct Answer: ${correctAnswers[0]}
@@ -59,9 +59,9 @@ function gradeQuiz(candidateAnswers) {
   5). ${questions[4]}
     Your Answer: ${candidateAnswers[4]}
     Correct Answer: ${correctAnswers[4]}`;
- console.log(gradeQuiz);
+ console.log(checkQuiz);
 
-  
+  console.log(score);
   let grade =((score/questions.length)*100);
   if (grade >=75){
    console.log(">>> Overall Grade:", grade, "% (", score, "out of 5 responses correct) <<< >>> Status: PASSED <<<");
